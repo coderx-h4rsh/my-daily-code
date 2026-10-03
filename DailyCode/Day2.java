@@ -21,5 +21,13 @@ public class Day2 {
    System.out.println(n1 + "." + n2 + "." + n3 + "." + n4 + "." + n1);
    System.out.println(T + "," + X);
    System.out.println("All Of The Above Is Written Using Variable Data Types In Java");
+
+   byte b = 0b00011000; // Binary System
+   int c = 074521; // Octal System
+   short d = 0xAED; // Hexadecimal System
+
+   short s = 0b0001000101011100;
+   float f = 0b01000010001100011100001010001111;
+   System.out.println(b + " , " + c + " , " + d + " , " + s + " , " + f);
     }
 }
