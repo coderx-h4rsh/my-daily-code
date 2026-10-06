@@ -29,10 +29,7 @@ public class Day8 {
    return(x*y*z);
    }
 }
-/*public class Day8 {
-    public static void main(String[] args) {
-
-    A();
+/*  A();
     System.out.println("And this is how Chain Functions work.");
     }
 
