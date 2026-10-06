@@ -1,40 +1,61 @@
-/*public class Day13 {
-    public static void main (String[] args) {
-        int x = 53;
-        int y = 79;
-
-        System.out.println(x + " , " + y);
-
-        addTen(x,y);
-        System.out.println(x + " , " + y);
+/*public class Day13{
+    public static void main(String[] args) {
+        Smartphone s1 = new Smartphone("Vivo", "S2", 36000.00);
+        Smartphone.storage = 8;
+        Smartphone.camera = 50;
+        s1.print();
     }
-    static void addTen(int x, int y) {
-        x = x + 10;
-        y = y + 10;
+}
 
+class Smartphone{
+    String brand;
+    String model;
+    static int storage;
+    static int camera;
+    double price;
+
+   Smartphone(String brand, String model, double price) {
+    this.brand = brand;
+    this.model = model;
+    this.price = price;
+    }
+
+    void print(){
+        System.out.println(brand + " , " + model + " , " + storage + "GB, " + camera + "Mp, " + price + "$");
     }
 }*/
 
 public class Day13 {
-    public static void main (String[] args) {
-    
-    Random r1 = new Random(53, 79);
-
-    System.out.println(r1.x + " , " + r1.y);
-    mulTen(r1);
-    System.out.println(r1.x + " , " + r1.y);
-    }
-    static void mulTen(Random r) {
-        r.x = r.x * 10;
-        r.y = r.y * 10;
+    public static void main(String[] args) {
+        Product p1 = new Product("Lamp", 67590, 423.896, 2);
+        //Product.website = "Blinkit";
+        //Product.tax = 18;
+        p1.invoice();
+        
     }
 }
-class Random {
-    int x;
-    int y;
 
-    Random(int x, int y) {
-        this.x = x;
-        this.y = y;
+class Product {
+    String name;
+    int id;
+    double price;
+    int qty;
+    static String website;
+    static final int tax = 18;
+
+    Product(String name, int id, double price,  int qty) {
+        this.name = name;
+        this.id = id;
+        this.price = price;
+        this.qty = qty; 
+    }
+
+    //Static Block
+    static {
+        Product.website = "Amazon";
+    }
+
+    void invoice() {
+        System.out.println(name + " , " + "Product ID#" + id + " , " + price + "$, " + qty + "pieces, " + website + " , " + tax + "% GST");
     }
 }

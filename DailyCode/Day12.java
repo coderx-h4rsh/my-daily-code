@@ -1,51 +1,40 @@
+/*public class Day12 {
+    public static void main (String[] args) {
+        int x = 53;
+        int y = 79;
+
+        System.out.println(x + " , " + y);
+
+        addTen(x,y);
+        System.out.println(x + " , " + y);
+    }
+    static void addTen(int x, int y) {
+        x = x + 10;
+        y = y + 10;
+
+    }
+}*/
+
 public class Day12 {
-    public static void main(String[] args) {
-        Car c1 = new Car("Ford", "Mustang GT", 2025, 293743.887);
-        //Car c1 = new Car();
-        c1.carSpecs();
-        c1.engineCheck();
+    public static void main (String[] args) {
+    
+    Random r1 = new Random(53, 79);
+
+    System.out.println(r1.x + " , " + r1.y);
+    mulTen(r1);
+    System.out.println(r1.x + " , " + r1.y);
+    }
+    static void mulTen(Random r) {
+        r.x = r.x * 10;
+        r.y = r.y * 10;
     }
 }
+class Random {
+    int x;
+    int y;
 
-class Car {
-    String brand;
-    String model;
-    int year;
-    double price;
-
-    Car() {
-        this("Unknown");
-        System.out.println("This is constructor first");
-    }
-
-    Car(String brand) {
-        this(brand, "Unknown");
-        System.out.println("This is second constructor");
-    }
-
-    Car(String brand, String model) {
-        this(brand, model, 0);
-        System.out.println("This is third constructor");
-    }
-
-    Car(String brand, String model, int year) {
-        this(brand, model, year, 0.0);
-        System.out.println("This is fourth constructor");
-    }
-
-    Car(String brand, String model, int year, double price) {
-        this.brand = brand;
-        this.model = model;
-        this.year = year;
-        this.price = price;
-        System.out.println("This is the main Constructor");
-    }
-
-    void engineCheck() {
-        System.out.println("Engine Starts...");
-    }
-
-    void carSpecs() {
-        System.out.println(brand + " , " + model + " , " + year + " , " +  price + "$");
+    Random(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 }

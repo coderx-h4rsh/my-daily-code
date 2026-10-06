@@ -1,64 +1,51 @@
-/*public class Day10 {
+public class Day11 {
     public static void main(String[] args) {
-        Student s1 = new Student();
-        s1.name = "Harsh";
-        s1.age  = 17;
-        s1.rollNumber = 1017;
-        s1.college = "CTAE"; 
-
-        s1.markAttendence();
-        s1.print();
-
-        Student s2 = new Student();
-        s2.name = "Amit";
-        s2.age = 19;
-        s2.rollNumber = 1003;
-        s2.college = "CTAE";
-
-        s2.markAttendence();
-        s2.print();
+        Car c1 = new Car("Ford", "Mustang GT", 2025, 293743.887);
+        //Car c1 = new Car();
+        c1.carSpecs();
+        c1.engineCheck();
     }
 }
 
-class Student{
-    String name;
-    int age;
-    int rollNumber;
-    String college;
+class Car {
+    String brand;
+    String model;
+    int year;
+    double price;
 
-    void markAttendence() {
-    System.out.println("Attendence is Marked.");
+    Car() {
+        this("Unknown");
+        System.out.println("This is constructor first");
     }
 
-    void print() {
-        System.out.println(name + " , " + age + " , " + rollNumber + " , " + college);
-    }
-}*/
-
-public class Day10 {
-    public static void main(String[] args) {
-        BankAccount b1 = new BankAccount();
-        b1.accHol = "Harsh";
-        b1.accNum = 436518;
-        b1.bal = 229.74;
-        b1.branch = "SBI Bundi";
-
-        b1.deposite();
-        b1.print();
-    }
-}
-
-class BankAccount {
-    String accHol;
-    int accNum;
-    double bal;
-    String branch;
-
-    void deposite() {
-        System.out.println("Amount Deposited Succesfully.");
+    Car(String brand) {
+        this(brand, "Unknown");
+        System.out.println("This is second constructor");
     }
 
-    void print() {
-        System.out.println(accHol + " , " + accNum + " , " + bal + "$ , " + branch);
+    Car(String brand, String model) {
+        this(brand, model, 0);
+        System.out.println("This is third constructor");
+    }
+
+    Car(String brand, String model, int year) {
+        this(brand, model, year, 0.0);
+        System.out.println("This is fourth constructor");
+    }
+
+    Car(String brand, String model, int year, double price) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+        this.price = price;
+        System.out.println("This is the main Constructor");
+    }
+
+    void engineCheck() {
+        System.out.println("Engine Starts...");
+    }
+
+    void carSpecs() {
+        System.out.println(brand + " , " + model + " , " + year + " , " +  price + "$");
     }
 }
