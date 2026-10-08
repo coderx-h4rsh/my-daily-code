@@ -1,51 +1,59 @@
-public class Day8 {
-   public static void main(String[] args) {
-   greet();
-   sayhello("Harsh");
-   System.out.println(num());
+public class functions {
+    public static void main(String[] args) {
+       // greet();
+       // sayHello("Harsh");
+       /* int x = age();
+       System.out.println(x); */
 
-   int i = 35; int j = 47; int k = 69;
-   System.out.println(mul(35, 47, 69));
-   }
+       // System.out.println(mul(38.990f, 26.442f));
+       // System.out.println(div(22.56, 556.998));
 
-   static void greet() {
-          System.out.println("Hello");
-   return;
-   }
+       // System.out.println(mul(224, 668, 977));
 
-   static void sayhello(String name) {
-        System.out.println("Hello" + name);
-   }
+       A();
+       System.out.println("This is how chain function works");
 
-   static int num() {
-   return 10;
-   }
+    }
 
-   static int mul(int a, int b){
-   return(a*b);
-   }
+    // no input & no output 
 
-   static int mul(int x, int y, int z) {
-   return(x*y*z);
-   }
+    static void greet() {
+        System.out.println("Namaste");
+    }
+
+    // input but no output
+
+    static void sayHello(String name) {
+        System.out.println("Hello " + name);
+    }
+
+    // output but no input
+
+    static int age() {
+        return 17;
+    }
+
+    // both input and output 
+
+
+    static float mul(float a, float b) {
+        return(a*b);
+    }
+
+    static double div(double f, double g) {
+        return(f/g);
+    }
+
+    static float mul(int x, int y, int z) {
+        return( (x*y) / z);
+    }
 }
-/*  A();
-    System.out.println("And this is how Chain Functions work.");
-    }
+    /* function overloading --> by changing 1) no. of parameters 2) order of parameters
+                                                 3) type of parameter
 
-    static void A() {
-    B();
-    System.out.println("This is string of A");
-    }
 
-    static void B() {
-    C();
-    System.out.println("This is string of B");
-    }
+// static --> to call the funcion without creating an object 
+/* return --> data type of value function will return like n above case its 'int'
+                in case of no output we use 'void'*/
 
-    static void C() {
-    System.out.println("This is string of C");
-    return;
-    }
-}*/
 
