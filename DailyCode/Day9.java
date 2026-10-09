@@ -1,21 +1,39 @@
-public class Day9 {
+public class recursion {
     public static void main(String[] args) {
-    int terms = 10;
-    for (int i = 0; i < terms; i++) {
-        System.out.println(fibonacci(i));
+
+        // recursion
+
+        // printnum(25);
+        // even(100);
+
+        A();
+        System.out.println("This is how Chain Function works");
     }
+    static void printnum(int n) {
+        if (n == 0) return;
+        printnum(n-1);
+        System.out.print(n + " "); 
     }
 
-    /*static void recursion(int n) {
-    if (n == 0) return;
-    recursion(n-1);
-    System.out.println(n);
-    }*/
+    static void even(int i) {
+        if(i == 22) return;
+        even (i - 2);
+        System.out.println(i);
+    }
 
-    // Fibonacci Series
+    // function chaining
 
-    static int fibonacci(int n) {
-        if (n == 0 || n == 1) return 1;
-        return fibonacci(n - 1) + fibonacci(n - 2); 
+    static void A() {
+        B();
+        System.out.println("This is function A");
+    }
+
+    static void B() {
+        C();
+        System.out.println("This is function B");
+    }
+
+    static void C() {
+        System.out.println("This is function C");
     }
 }
