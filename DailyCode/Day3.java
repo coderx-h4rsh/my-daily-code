@@ -1,4 +1,4 @@
-public class Day5 {
+public class Day3 {
     public static void main (String[] args) {
         // Implicit Conversion
     byte b = 27;

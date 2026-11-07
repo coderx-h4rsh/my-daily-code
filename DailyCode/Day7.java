@@ -1,4 +1,4 @@
-public class arrays {
+public class Day7 {
     public static void main(String[] args) {
          // indicisations starts from 0 to (n-1) where n is array length
 

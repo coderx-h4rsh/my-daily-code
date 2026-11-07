@@ -1,4 +1,4 @@
-public class functions {
+public class Day8 {
     public static void main(String[] args) {
        // greet();
        // sayHello("Harsh");
@@ -46,6 +46,10 @@ public class functions {
 
     static float mul(int x, int y, int z) {
         return( (x*y) / z);
+    }
+
+    static void A() {
+        System.out.println("A");
     }
 }
     /* function overloading --> by changing 1) no. of parameters 2) order of parameters
