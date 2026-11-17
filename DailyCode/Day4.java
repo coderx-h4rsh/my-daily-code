@@ -52,14 +52,14 @@ public class Day4 {
     t = p^q;
     int u;
     u = ~p;
-    System.out.println(t + "  " + s + "  " + t + "  " + u);
+    System.out.println(r + "  " + s + "  " + t + "  " + u);
 
     // Shifter Operators
 
     int v = -70;
-    int vv = i << 9;
-    int vvv = i >> 2;
-    int vvvv = i >>> 2;
+    int vv = v << 9;
+    int vvv = v >> 2;
+    int vvvv = v >>> 2;
     System.out.println(vv + "  " + vvv + "  " + vvvv);
 
     // Logical Shifters
