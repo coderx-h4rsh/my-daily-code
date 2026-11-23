@@ -42,7 +42,7 @@ public class Day7 {
                     n++;
                     System.out.print(array[i][j] + " ");
                 }   System.out.println();
-            }*/
+            }
 
            // Assignment through a matrix
 
@@ -57,6 +57,6 @@ public class Day7 {
                     System.out.print(array[i][j] + " ");
                 }   
                     System.out.println();
-            }
+            } */
     }
 }

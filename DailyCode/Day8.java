@@ -59,5 +59,6 @@ public class Day8 {
 // static --> to call the funcion without creating an object 
 /* return --> data type of value function will return like n above case its 'int'
                 in case of no output we use 'void'*/
+// the Main funcn is the entry point of any java program, JVM call other funcn from Main.
 
 
